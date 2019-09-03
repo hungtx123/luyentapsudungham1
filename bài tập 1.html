@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập năm muốn kiểm tra:
+<input type="text" id="input">
+<input type="button" value="Kiểm tra" onclick="centuryFromYear()">
+<script>
+    function centuryFromYear() {
+        let input = document.getElementById("input").value;
+        let phandu = input % 100;
+        let theki;
+        while (input <0){
+            alert("Nhập lại!");
+            return;
+        }
+        if (phandu == 0) {
+            theki = input / 100;
+            document.write("Thế kỉ: " + theki);
+        } else {
+            theki = Math.floor(input / 100) + 1;
+            document.write("Thế kỉ: " + theki);
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Kiểm tra" onclick="adjacentElementsProduct()">
+<script>
+    function adjacentElementsProduct() {
+        let inputArray = [3, 6, -2, -5, 7, 3];
+        let max = inputArray[0]*inputArray[1];
+        for (let i = 1; i < inputArray.length-1; i++) {
+            let kiemtra = inputArray[i]*inputArray[i+1];
+            if (max<kiemtra){
+            max=kiemtra;
+            }
+        }
+        document.write("Tích cần tìm là : "+max);
+    }
+</script>
+</body>
+</html>

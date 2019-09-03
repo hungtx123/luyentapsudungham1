@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sohang;
+    let sohangn1=1;
+    let sohangn2=1;
+    let sum = sohangn1+sohangn2;
+    document.write("1    1");
+    for (let i=0;i<=17;i++){
+        sohang= sohangn1+sohangn2;
+        sum +=sohang;
+        document.write("   " + sohang);
+        sohangn2=sohangn1;
+        sohangn1=sohang;
+        }
+        document.write("<br>" +"Tổng của 20 số đầu tiên trong dãy Fibonaci : " +sum );
+</script>
+
+</body>
+</html>
